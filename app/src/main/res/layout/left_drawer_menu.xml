@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/navHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/lightGreen"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_profile_picture"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:text="River Hill"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:text="View Profile"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4E4E4E" />
+
+            <TextView
+                android:id="@+id/homeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_home"
+                android:drawablePadding="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:text="Home"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4E4E4E" />
+
+            <TextView
+                android:id="@+id/treatmentBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_treatment"
+                android:drawablePadding="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:text="Treatment"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4E4E4E" />
+
+            <TextView
+                android:id="@+id/profileBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_profile"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4E4E4E" />
+
+            <TextView
+                android:id="@+id/settingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_settings"
+                android:drawablePadding="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:text="Setting"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4E4E4E" />
+
+            <TextView
+                android:id="@+id/logoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_logout"
+                android:drawablePadding="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:text="Log out"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4E4E4E" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
