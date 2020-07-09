@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".fullSurveyActivity">
+    tools:context=".activities.fullSurveyActivity">
 
     <ImageButton
         android:id="@+id/backBtn6"

@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundnotify"
 
-    tools:context=".noticeActivity">
+    tools:context=".activities.noticeActivity">
 
 </android.support.constraint.ConstraintLayout>

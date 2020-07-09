@@ -10,7 +10,7 @@
     tools:openDrawer="start"
     android:background="@drawable/backgroundprofile"
     android:id="@+id/drawerLayout"
-    tools:context=".profileActivity">
+    tools:context=".activities.profileActivity">
 
     <include
         android:id="@+id/include"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundlogin"
-    tools:context=".loginActivity">
+    tools:context=".activities.loginActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -35,7 +35,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <Button
         android:id="@+id/registerBtn"
@@ -74,7 +74,7 @@
         app:layout_constraintVertical_bias="0.051" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="50sp"
         android:layout_marginStart="32dp"
@@ -93,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="50sp"
         android:layout_marginStart="32dp"
@@ -109,7 +109,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
 
     <ImageButton
         android:id="@+id/backBtn"

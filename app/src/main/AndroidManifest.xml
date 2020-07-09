@@ -2,25 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.arjava11">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".settingActivity" />
-        <activity android:name=".treatmentActivity" />
-        <activity android:name=".profileActivity" />
-        <activity android:name=".takePhotoActivity" />
-        <activity android:name=".surveyActivity" />
-        <activity android:name=".registerActivity" />
-        <activity android:name=".noticeActivity" />
-        <activity android:name=".mainPageActivity" />
-        <activity android:name=".loginActivity" />
-        <activity android:name=".fullSurveyActivity" />
-        <activity android:name=".bodyPartSelectActivity" />
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.settingActivity" />
+        <activity android:name=".activities.treatmentActivity" />
+        <activity android:name=".activities.profileActivity" />
+        <activity android:name=".activities.takePhotoActivity" />
+        <activity android:name=".activities.surveyActivity" />
+        <activity android:name=".activities.registerActivity" />
+        <activity android:name=".activities.noticeActivity" />
+        <activity android:name=".activities.mainPageActivity" />
+        <activity android:name=".activities.loginActivity" />
+        <activity android:name=".activities.fullSurveyActivity" />
+        <activity android:name=".activities.bodyPartSelectActivity" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

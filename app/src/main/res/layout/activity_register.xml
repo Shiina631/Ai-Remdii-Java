@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundlogin"
-    tools:context=".registerActivity">
+    tools:context=".activities.registerActivity">
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="64dp"
-            android:text="@string/appName"
+            android:text="Register"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="36sp"
@@ -49,11 +49,10 @@
             android:elevation="6dp"
             android:textAllCaps="false"
             android:textColor="@color/white"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextRepeatedPassword" />
 
         <Button
             android:id="@+id/loginBtn"
@@ -75,7 +74,7 @@
             app:layout_constraintTop_toBottomOf="@+id/registerBtn" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:layout_marginStart="32dp"
@@ -94,7 +93,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/editTextRepeatedPassword"
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:layout_marginStart="32dp"
@@ -110,10 +109,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText6" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:layout_marginStart="32dp"
@@ -129,10 +128,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.51"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
 
-        <Spinner
-            android:id="@+id/spinner"
+        <EditText
+            android:id="@+id/editTextAge"
             android:layout_width="0dp"
             android:layout_height="50sp"
             android:layout_marginStart="32dp"
@@ -140,26 +139,27 @@
             android:elevation="6dp"
             android:layout_marginEnd="64dp"
             android:background="@drawable/input_field"
-            android:textAlignment="center"
             android:textColor="@color/grey"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toStartOf="@+id/spinner2"
+            android:ems="10"
+            android:hint="Age"
+            app:layout_constraintEnd_toStartOf="@+id/editTextUserName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
 
-        <Spinner
-            android:id="@+id/spinner2"
+        <EditText
+            android:id="@+id/editTextUserName"
             android:layout_width="0dp"
             android:layout_height="50sp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:elevation="6dp"
+            android:hint="Username"
             android:background="@drawable/input_field"
             android:textColor="@color/grey"
-            android:textSize="12sp"
+            android:ems="10"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/spinner"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+            app:layout_constraintStart_toEndOf="@+id/editTextAge"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
 
     </android.support.constraint.ConstraintLayout>
 </android.support.v4.widget.NestedScrollView>
